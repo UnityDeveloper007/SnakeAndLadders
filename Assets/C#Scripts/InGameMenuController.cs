@@ -25,6 +25,6 @@ public class InGameMenuController : MonoBehaviour
     }
     public void OpenGameMenu()
     {
-        InGameMenuParent.SetActive(true);
+        InGameMenuParent.SetActive(!InGameMenuParent.activeSelf);
     }
 }
