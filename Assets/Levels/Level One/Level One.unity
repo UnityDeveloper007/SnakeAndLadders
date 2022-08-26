@@ -573,6 +573,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 7456781909196700817, guid: ed9127d8ed1b0a043b0891853b989773, type: 3}
+      propertyPath: NumberOfBlocks
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456781909196700817, guid: ed9127d8ed1b0a043b0891853b989773, type: 3}
+      propertyPath: FirstColor.rgba
+      value: 4280098279
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456781909196700817, guid: ed9127d8ed1b0a043b0891853b989773, type: 3}
+      propertyPath: SecondColor.rgba
+      value: 4293322476
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9127d8ed1b0a043b0891853b989773, type: 3}
 --- !u!224 &7456781910063115336 stripped
