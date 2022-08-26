@@ -1,26 +1,35 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Mime;
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class InstantianteBlocks : MonoBehaviour
 {
-    public Image Block;
-    public GameObject parent;
-    public Text blockText;
+    [SerializeField]
+    private Image Block;
+    [SerializeField]
+    private GameObject parent;
+    [SerializeField]
+    private Text blockText;
+    [SerializeField]
+    private int NumberOfBlocks;
+    [SerializeField]
+    private Color32 FirstColor;
+    [SerializeField]
+    private Color32 SecondColor;
     // Start is called before the first frame update     m
     void Start()
     {
-        intantiateBlock(99);
+        if (FirstColor.Equals(null))
+            FirstColor = new Color32(255, 255, 225, 100);
+        if (FirstColor.Equals(null))
+            SecondColor = new Color32(0, 0, 0, 100);
+        intantiateBlock(NumberOfBlocks);
     }
 
 
     private void intantiateBlock(int counter)
     {
         int count = 0;
-      for(int x=0; x <= 101; x++)
+      for(int x=0; x <= counter + 1; x++)
       {  
            count++;
            
@@ -35,9 +44,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -54,9 +63,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -75,9 +84,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -95,9 +104,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -112,9 +121,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -135,9 +144,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -154,9 +163,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -172,9 +181,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -189,9 +198,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
@@ -207,9 +216,9 @@ public class InstantianteBlocks : MonoBehaviour
                     txtBlock.transform.parent = block.transform;
                     txtBlock.text = y.ToString();
                       if(y%2 == 0){
-                           block.GetComponent<Image>().color = new Color32(255,255,225,100);
+                        block.GetComponent<Image>().color = FirstColor;
                         }else{
-                        block.GetComponent<Image>().color = new Color32(0,0,0,100);
+                        block.GetComponent<Image>().color = SecondColor;
                         }
                              block.name = y.ToString();
                  }
