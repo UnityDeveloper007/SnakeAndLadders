@@ -7,6 +7,10 @@ public class MainMenu : MonoBehaviour
     private GameObject MainMenuOptionsParent;
     [SerializeField]
     private Scenes StartSceneindex;
+    public void Volume(float Volume)
+    {
+        Debug.Log($"this is the current Volume level: {Volume}");
+    }
     public void ExitGameAction()
     {
         Application.Quit();
