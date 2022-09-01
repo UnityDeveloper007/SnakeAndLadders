@@ -420,9 +420,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2853135674554456963, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: MainAudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 9e6bec58f36fa91478d35ca153cdd296, type: 2}
     - target: {fileID: 2853135674554456965, guid: db966e31043efab498db9cca1db3e597, type: 3}
       propertyPath: m_Name
       value: MainMenuUi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819896275851347589, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819896275851347589, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819896275851347589, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: m_MinValue
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819896275851347589, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819896275851347589, guid: db966e31043efab498db9cca1db3e597, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3819896276001014374, guid: db966e31043efab498db9cca1db3e597, type: 3}
       propertyPath: m_AnchorMax.y

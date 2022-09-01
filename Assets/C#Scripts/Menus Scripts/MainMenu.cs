@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField]
@@ -7,9 +8,12 @@ public class MainMenu : MonoBehaviour
     private GameObject MainMenuOptionsParent;
     [SerializeField]
     private Scenes StartSceneindex;
+    [SerializeField]
+    private AudioMixer MainAudioMixer;
     public void Volume(float Volume)
     {
-        Debug.Log($"this is the current Volume level: {Volume}");
+        MainAudioMixer.SetFloat("GameVolume", Volume);
+        //Debug.Log($"this is the current Volume level: {Volume}");
     }
     public void ExitGameAction()
     {
