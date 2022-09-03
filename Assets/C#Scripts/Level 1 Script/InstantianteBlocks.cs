@@ -14,9 +14,14 @@ public class InstantianteBlocks : MonoBehaviour
     private Color32 FirstColor;
     [SerializeField]
     private Color32 SecondColor;
+
     // Start is called before the first frame update     m
     void Start()
     {
+    
+        
+        
+
        if (FirstColor.Equals(null))
             FirstColor = new Color32(255, 255, 225, 100);
         if (FirstColor.Equals(null))
