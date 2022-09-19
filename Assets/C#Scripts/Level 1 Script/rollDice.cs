@@ -1,14 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class rollDice : MonoBehaviour
 {
 
   // Array of dice sides sprites to load from Resources folder
     public Sprite[] diceSides;
-
     // Reference to sprite renderer to change sprites
     public Image rend;
  
@@ -23,7 +20,7 @@ public class rollDice : MonoBehaviour
         //   diceSides[x] =  GetComponent<Sprite>();
         //}
 
-          randomDiceSide = Random.Range(0, 5);
+          randomDiceSide = Random.Range(0, 6);
 
             // Set sprite to upper face of dice from array according to random value
             rend.GetComponent<Image>().sprite = diceSides[randomDiceSide];
@@ -55,7 +52,7 @@ public class rollDice : MonoBehaviour
         for (int i = 0; i <= 20; i++)
         {
             // Pick up random value from 0 to 5 (All inclusive)
-            randomDiceSide = Random.Range(0, 5);
+            randomDiceSide = Random.Range(0, 6);
 
             // Set sprite to upper face of dice from array according to random value
             rend.GetComponent<Image>().sprite = diceSides[randomDiceSide];
